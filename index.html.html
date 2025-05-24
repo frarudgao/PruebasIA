@@ -3,25 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenido a la web de Leandro</title>
+  <title>Esa Diva - Tendencia Viral</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #111, #2b2b2b);
+      color: white;
       text-align: center;
-      margin-top: 100px;
+      padding: 50px 20px;
+      background-image: url('https://images.unsplash.com/photo-1600880292214-c211ff6a0760?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(2px);
     }
     h1 {
-      color: #4CAF50;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ff3cac;
     }
     p {
       font-size: 1.2em;
+      margin-bottom: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 15px 20px;
+      border-radius: 10px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #ff3cac;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #e31b6d;
+    }
+    @media(max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola, soy Leandro! 👋</h1>
-  <p>Esta es mi primera página web subida gratis con GitHub Pages.</p>
+  <h1>🔥 Melody lo ha vuelto a hacer</h1>
+  <p>"Esa Diva" se ha convertido en una de las canciones más virales de TikTok y Spotify en España.  
+    ¡Miles de personas ya están creando su versión!</p>
+  <a href="https://www.youtube.com/results?search_query=esa+diva+melody" class="button" target="_blank">Escúchala ahora</a>
 </body>
 </html>
