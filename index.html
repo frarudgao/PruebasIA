@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sube tu producto gratis para testeo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publica tu producto para testeo gratuito</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG8GR97YEE"></script>
@@ -14,6 +14,9 @@
     gtag('config', 'G-ZG8GR97YEE');
   </script>
 
+  <!-- Fuente profesional -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -21,71 +24,89 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: linear-gradient(to bottom right, #111, #2b2b2b);
-      color: white;
-      padding: 40px 20px;
+      color: #ffffff;
+      padding: 60px 20px;
       background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
       background-size: cover;
       background-position: center;
+      min-height: 100vh;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       color: #00d9ff;
       text-align: center;
       margin-bottom: 20px;
+      font-weight: 700;
     }
-    p {
+    p.description {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 1.2em;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+      max-width: 600px;
       background-color: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 10px;
+      padding: 20px 30px;
+      border-radius: 12px;
+      line-height: 1.6;
     }
     form {
-      max-width: 500px;
+      max-width: 550px;
       margin: 0 auto;
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      border-radius: 15px;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     }
     input, textarea, button {
       width: 100%;
-      padding: 10px;
-      margin-top: 15px;
+      padding: 12px;
+      margin-top: 20px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 1em;
+      font-family: 'Inter', sans-serif;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #999;
     }
     button {
       background-color: #00d9ff;
       color: #000;
-      font-weight: bold;
+      font-weight: 600;
       cursor: pointer;
       transition: background 0.3s;
     }
     button:hover {
       background-color: #00aacc;
     }
-    @media(max-width: 600px) {
-      h1 { font-size: 2em; }
-      p { font-size: 1em; }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p.description {
+        font-size: 1em;
+        padding: 15px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Sube tu producto para testearlo gratis</h1>
-  <p>¿Tienes un producto que quieres dar a conocer? Publícalo aquí de forma gratuita para que otros usuarios lo prueben y te den feedback.</p>
+
+  <h1>🚀 Publica tu producto para testeo</h1>
+  <p class="description">
+    ¿Quieres dar visibilidad a tu producto? Súbelo gratis a nuestra plataforma y recibe feedback real de usuarios que lo probarán. Ideal para startups, emprendedores o marcas en fase de testeo.
+  </p>
 
   <form>
-    <input type="text" placeholder="Nombre del producto" required>
+    <input type="text" placeholder="Nombre del producto" required />
     <textarea rows="4" placeholder="Descripción del producto" required></textarea>
-    <input type="url" placeholder="Enlace al producto o red social">
-    <input type="email" placeholder="Tu email de contacto" required>
+    <input type="url" placeholder="Enlace al producto o perfil social" />
+    <input type="email" placeholder="Correo electrónico de contacto" required />
     <button type="submit">Publicar producto</button>
   </form>
+
 </body>
 </html>
+
 
